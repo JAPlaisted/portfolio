@@ -1,0 +1,24 @@
+@import "./node_modules/normalize.css/";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Color Palette */
+:root {
+  --color-primary: #6c63ff;
+  --color-secondary: #948fff;
+  --color-dark-bkgrnd: #262534;
+  --color-light-bkgrnd: #f2f2f2;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
