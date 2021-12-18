@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
   </head>
   <body>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><h3>JP</h3></a>
+      <svg class="icon icon--white nav__toggler">
+        <use href="/assets/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Projects</a></li>
+        <li class="nav__item"><a href="#">Skills</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <section class="block block--dark block--skewed-left">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
@@ -26,6 +37,78 @@
           src="assets/undraw_programming_re_kg9v.svg"
           alt=""
         />
+      </div>
+    </section>
+
+    <section class="block container block-projects">
+      <h2>Projects</h2>
+      <div class="grid grid--1x3">
+        <div class="project">
+          <div class="card">
+            <a href="#">
+              <img
+                src="assets/weatherMe.JPG"
+                alt=""
+                width="300px"
+                height="200px"
+              />
+            </a>
+            <div class="card__body">
+              <header class="card__header">
+                <h3>WeatherMe</h3>
+                <a class="github" href="assets/GitHub-Mark-32px.png"></a>
+              </header>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae libero expedita eaque provident id repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="card">
+            <a href="#">
+              <img
+                src="assets/weatherMe.JPG"
+                alt=""
+                width="300px"
+                height="200px"
+              />
+            </a>
+            <div class="card__body">
+              <header class="card__header">
+                <h3>WeatherMe</h3>
+                <a class="github" href="assets/GitHub-Mark-32px.png"></a>
+              </header>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae libero expedita eaque provident id repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project block-projects">
+          <div class="card">
+            <a href="#">
+              <img
+                src="assets/weatherMe.JPG"
+                alt=""
+                width="300px"
+                height="200px"
+              />
+            </a>
+            <div class="card__body">
+              <header class="card__header">
+                <h3>WeatherMe</h3>
+                <a class="github" href="assets/GitHub-Mark-32px.png"></a>
+              </header>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae libero expedita eaque provident id repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
