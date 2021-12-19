@@ -20,7 +20,7 @@
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-accent: #ff3400;
-  --color-headings: #1b0760;
+  --color-headings: whitesmoke;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -135,7 +135,7 @@ p {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(100% 5%, 0 0, 0 100%, 100% 100%);
   padding-bottom: calc(var(--padding-vertical) +4rem);
 }
 
@@ -158,21 +158,31 @@ p {
   cursor: pointer;
 }
 
+.card__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.github {
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .card__header > h3 {
   text-align: center;
 }
 
 .card__body > p {
-  text-align: center;
-}
-
-@media screen and (min-width: 1024px) {
-  .card__body > p {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 /* Project Block */
+.block-projects {
+  margin-bottom: 5rem;
+}
 .block-projects .grid {
   gap: 8rem 4rem;
 }
@@ -192,6 +202,7 @@ p {
 
 .hero__image {
   width: 100%;
+  margin-bottom: 6rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -278,6 +289,10 @@ a {
   fill: #fff;
 }
 
+.icon--primary {
+  fill: var(--color-primary);
+}
+
 @media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
@@ -292,4 +307,33 @@ a {
   .nav__item {
     border: 0;
   }
+}
+
+/* Media */
+.media {
+  display: flex;
+  flex-direction: row;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+  fill: var(--color-primary);
+}
+
+.block--media {
+  display: flex;
+  flex-direction: column;
+}
+
+.block--media > h2 {
+  margin-bottom: 12rem;
+  text-align: center;
 }
