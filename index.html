@@ -15,17 +15,24 @@
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
   </head>
   <body>
+
+
+
     <nav class="nav collapsible">
       <a class="nav__brand" href="/"><h3>JP</h3></a>
       <svg class="icon icon--white nav__toggler">
-        <use href="/assets/sprite.svg#menu"></use>
+        <use xlink:href="/assets/sprite.svg#menu"></use>
       </svg>
       <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Projects</a></li>
-        <li class="nav__item"><a href="#">Skills</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#projects">Projects</a></li>
+        <li class="nav__item"><a href="#skills">Skills</a></li>
+        <li class="nav__item "><a class="contact" href="mailto: jonathan.plaisted@outlook.com">Contact</a></li>
       </ul>
     </nav>
+
+
+
+
     <section class="block block--dark block--skewed-left">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
@@ -39,7 +46,7 @@
         />
       </div>
     </section>
-    <section class="block container block--light block-projects">
+    <section id="projects" class="block container block--light block-projects">
       <h2>Projects</h2>
       <div class="grid grid--1x3">
         <div class="project">
@@ -131,7 +138,7 @@
       </div>
     </section>
 
-    <section class="block block--primary block--light">
+    <section  id="skills" class="block block--primary block--light">
       <h2>Skills & Tools</h2>
       <div class="media">
         <div class="grid grid--1x3">

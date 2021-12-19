@@ -40,7 +40,6 @@ body {
   color: var(--color-body);
 }
 
-.block--dark h1,
 .block--dark h2,
 .block--dark h3 {
   color: var(--color-headings);
@@ -252,6 +251,18 @@ p {
   color: #fff;
 }
 
+.contact {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  transition: 0.25s ease-in-out;
+}
+
+.contact:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
 .nav__toggler {
   opacity: 0.5;
   transition: box-shadow 0.15s;
@@ -268,16 +279,42 @@ p {
   transform: translateX(3px);
 }
 
+.nav__brand > h3 {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__item {
+    border: 0;
+  }
+}
+
 /* Links */
 a {
   text-decoration: none;
 }
 
+/* Collapsibles */
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
 }
 
 /* Lists */
