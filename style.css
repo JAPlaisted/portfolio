@@ -30,6 +30,7 @@
 html {
   font-size: 62.5%;
   background-color: #f2f2f2;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -125,6 +126,7 @@ p {
 .block--light {
   background: #f2f2f2;
   color: #7b858b;
+  border-bottom: 1px solid var(--color-dark-bkgrnd);
 }
 
 .block--dark {
@@ -228,6 +230,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 1rem;
+  border-bottom: 1px solid white;
 }
 
 .nav__list {
@@ -349,4 +352,15 @@ a {
 .spacer {
   height: 100px;
   background: white;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid white;
+}
+
+.footer > p {
+  text-align: center;
+  margin-top: 12.5%;
+  font-size: 1rem;
 }
