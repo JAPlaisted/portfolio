@@ -130,6 +130,11 @@ p {
   color: #f2f2f2;
 }
 
+.block--primary {
+  background: linear-gradient(-90deg, var(--color-primary), #3c32ff);
+  color: #f2f2f2;
+}
+
 .block--dark .block__heading {
   color: var(--color-body);
 }
@@ -336,4 +341,9 @@ a {
 .block--media > h2 {
   margin-bottom: 12rem;
   text-align: center;
+}
+
+.spacer {
+  height: 100px;
+  background: white;
 }
