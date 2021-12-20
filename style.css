@@ -139,7 +139,7 @@ p {
 }
 
 .block--dark .block__heading {
-  color: var(--color-body);
+  color: var(--color-light-bkgrnd);
 }
 
 .block--skewed-right {
@@ -401,11 +401,6 @@ a {
   margin-bottom: 12rem;
   text-align: center;
   color: white;
-}
-
-.spacer {
-  height: 100px;
-  background: white;
 }
 
 /* Footer */
