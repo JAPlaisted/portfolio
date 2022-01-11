@@ -159,6 +159,8 @@ p {
   margin-right: auto;
   border: 0.375rem double black;
   transition: 300ms ease-in-out;
+  background-color: var(--color-light-bkgrnd);
+  padding: 6rem;
 }
 
 .card > a > img:hover {
