@@ -26,6 +26,14 @@
   --border-radius: 30px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
