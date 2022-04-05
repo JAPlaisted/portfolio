@@ -15,12 +15,12 @@
 :root {
   --color-primary: #6c63ff;
   --color-secondary: #948fff;
-  --color-dark-bkgrnd: #000;
+  --color-dark-bkgrnd: #2f2e41;
   --color-light-bkgrnd: #f2f2f2;
   --color-body: #918ca4;
   --color-body-darker: #625a80;
   --color-accent: #ff3400;
-  --color-headings: #5c5577;
+  --color-headings: #332d2d;
   --color-headings--light: #211f2b;
   --color-border: #ccc;
   --border-radius: 30px;
@@ -95,6 +95,7 @@ p {
 /* Grids */
 .grid {
   display: grid;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,7 +138,7 @@ p {
 }
 
 .block--dark {
-  background: #000;
+  background: var(--color-dark-bkgrnd);
   color: #f2f2f2;
 }
 
@@ -167,7 +168,7 @@ p {
   margin-right: auto;
   border: 0.375rem double black;
   transition: 300ms ease-in-out;
-  background-color: var(--color-light-bkgrnd);
+  background-color: white;
   padding: 6rem;
 }
 
@@ -234,7 +235,7 @@ p {
 
 .nav {
   align-items: center;
-  background: #000;
+  background: var(--color-dark-bkgrnd);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -491,3 +492,46 @@ a {
     margin: 0 2rem;
   }
 }
+
+
+/* Projects */
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.375rem double black;
+  transition: 300ms ease-in-out;
+  background-color: white;
+  padding: 6rem;
+
+}
+
+.project-1 {
+  background-image: url("https://media.gq.com/photos/61aa416d7e718dbdfbf7e42c/master/w_1600%2Cc_limit/ZOA_Logos-22.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.project-2 {
+  background-image: url("http://images.squarespace-cdn.com/content/v1/5325e79ae4b06acf70718257/1416264642417-SLL5539PUWV1FJYV6DPZ/Pacifica+Pizza+TD+Logo+White.png?format=750w");
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+  
+  .project-1:hover,
+  .project-2:hover,
+  .project-3:hover,
+  .project-4:hover,
+  .project-5:hover  {
+    box-shadow: 0 0 0 0.5rem var(--color-primary);
+    cursor: pointer;
+  }
